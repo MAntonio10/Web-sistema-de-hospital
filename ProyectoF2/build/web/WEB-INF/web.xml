@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>PacienteC</servlet-name>
+        <servlet-class>Controlador.PacienteC</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RecetaC</servlet-name>
+        <servlet-class>Controlador.RecetaC</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VistaInventarioC</servlet-name>
+        <servlet-class>Controlador.VistaInventarioC</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MedicamentoC</servlet-name>
+        <servlet-class>Controlador.MedicamentoC</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PacienteC</servlet-name>
+        <url-pattern>/PacienteC</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RecetaC</servlet-name>
+        <url-pattern>/RecetaC</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VistaInventarioC</servlet-name>
+        <url-pattern>/VistaInventarioC</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MedicamentoC</servlet-name>
+        <url-pattern>/MedicamentoC</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

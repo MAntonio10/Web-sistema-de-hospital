@@ -1,0 +1,82 @@
+body {background-color:#C9EFFF;background-image:url('http://fotos.subefotos.com/e2c66608eebe05b0a4b3c7edcc6a275bo.png'),url('http://fotos.subefotos.com/9a7f009f445ed64b9c3ecb5318b0474ao.png');background-repeat:no-repeat,repeat;background-size:cover,auto;background-attachment:fixed;font-family:arial,helvetica,sans-sarif;}
+h1 {font-size:30px;line-height:30px;margin-bottom:20px;}
+table {background:#ffffff;width:600px;margin: 100px auto;font-size:13px;line-height:15px;border-radius:20px;box-shadow:1px 2px 1px 1px; #424545;}
+thead {background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#C5D8D9), to(#A1CCC6));font-weight:bold;}
+th {text-align:left;}
+th:first-child,td:first-child {padding-left:20px;}
+th:first-child {border-radius:20px 0 0 0;}
+th:last-child {border-radius:0 20px 0 0;}
+td,th { text-align: center;padding:25px; font-size: 15px;}
+tr:nth-child(even) {background:rgba(199,224,220,.2);}
+td:nth-child(2){border-left:1px solid #ccc;border-right:1px solid #ccc;}
+tbody tr:last-child td:first-child {border-radius:0 0 0 20px;}
+tbody tr:last-child td:last-child {border-radius:0 0 20px 0;}
+tbody tr:hover {background:#FFFFCC;}
+
+button {
+    margin: 10px;
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 5px;
+ background: #183153;
+ font-family: "Montserrat", sans-serif;
+ box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+ overflow: hidden;
+ border: none;
+}
+
+button:after {
+ content: " ";
+ width: 0%;
+ height: 100%;
+ background: #FFD401;
+ position: absolute;
+ transition: all 0.4s ease-in-out;
+ right: 0;
+}
+
+button:hover::after {
+ right: auto;
+ left: 0;
+ width: 100%;
+}
+
+button span {
+    margin-bottom: 10px;
+ text-align: center;
+ text-decoration: none;
+ width: 100%;
+ padding: 18px 25px;
+ color: #fff;
+ font-size: 1.125em;
+ font-weight: 700;
+ letter-spacing: 0.3em;
+ z-index: 20;
+ transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+ color: #183153;
+ animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+ 0% {
+  transform: scale(1);
+ }
+
+ 50% {
+  transform: scale(0.95);
+ }
+
+ 100% {
+  transform: scale(1);
+ }
+}
+
+form{
+    display: flex;
+            justify-content: center;
+            align-items: center;}
